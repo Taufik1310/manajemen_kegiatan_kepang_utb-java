@@ -53,6 +53,7 @@ public class ProgramKerja extends Kegiatan {
         System.out.println("Status\t\t\t: " + getStatus());
         System.out.println("Periode\t\t\t: " + getPeriode());
         System.out.println("Penanggung Jawab\t: " + getPenanggungJawab());
+        System.out.println("Durasi Hari\t\t: " + getDurasiHari() + " Hari");
     }
 }
 

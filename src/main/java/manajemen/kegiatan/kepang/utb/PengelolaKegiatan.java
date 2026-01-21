@@ -77,6 +77,7 @@ public class PengelolaKegiatan implements ManajemenKegiatan {
         System.out.println("Data tidak ditemukan");
     }
     
+    @Override
     public void ubahStatusKegiatan(String kode, StatusKegiatan statusBaru) {
         for (Kegiatan k : daftarKegiatan) {
             if (k.getKode().equals(kode)) {
@@ -90,7 +91,7 @@ public class PengelolaKegiatan implements ManajemenKegiatan {
     }
 
     // ================= FILE HANDLING CSV =================
-        private void saveData() {
+    private void saveData() {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILE_NAME))) {
             for (Kegiatan k : daftarKegiatan) {
 

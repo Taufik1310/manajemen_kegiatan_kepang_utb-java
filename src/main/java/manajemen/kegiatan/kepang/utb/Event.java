@@ -53,6 +53,7 @@ public class Event extends Kegiatan {
         System.out.println("Status\t\t: " + getStatus());
         System.out.println("Tanggal\t\t: " + getTanggal());
         System.out.println("Lokasi\t\t: " + getLokasi());
+        System.out.println("Jumlah Peserta\t: " + getJumlahPeserta() + " Peserta");
     }
 }
 
